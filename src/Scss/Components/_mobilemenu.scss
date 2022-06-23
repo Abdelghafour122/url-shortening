@@ -1,0 +1,24 @@
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-violet;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 7px;
+  width: 100%;
+  & button {
+    color: $white;
+  }
+  & .top,
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  & hr {
+    width: 100%;
+    background-color: $grey;
+  }
+}

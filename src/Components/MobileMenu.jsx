@@ -10,8 +10,8 @@ const MobileMenu = () => {
       </div>
       <hr />
       <div className="bottom">
-        <button>Login</button>
-        <button>Sign Up</button>
+        <button className="empty">Login</button>
+        <button className="rounded">Sign Up</button>
       </div>
     </div>
   );

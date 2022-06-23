@@ -1,0 +1,13 @@
+nav {
+  padding: 20px 0;
+  & .container {
+    & .left {
+      gap: 20px;
+      & ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
