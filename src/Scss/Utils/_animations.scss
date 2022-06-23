@@ -1,0 +1,31 @@
+.show-slow {
+  animation: show-slow-ani 0.4s ease-in-out forwards;
+}
+.hide-slow {
+  animation: hide-slow-ani 0.4s ease-in-out forwards;
+}
+
+@keyframes show-slow-ani {
+  from {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes hide-slow-ani {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+  }
+}
