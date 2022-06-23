@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.df {
+  display: flex;
+}
+.df.jc-sb {
+  justify-content: space-between;
+}
+.df.jc-c {
+  justify-content: center;
+}
+.df.jc-sa {
+  justify-content: space-around;
+}
+.df.jc-fs {
+  justify-content: flex-start;
+}
+.df.jc-fe {
+  justify-content: flex-end;
+}
+.df.ai-c {
+  align-items: center;
+}
+.df.ai-fs {
+  align-items: flex-start;
+}
+.df.ai-fe {
+  align-items: flex-end;
+}
+.df.fd-c {
+  flex-direction: column;
+}
+
+@media (max-width: 35.9375rem) {
+  .container {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}
+@media (min-width: 36rem) {
+  .container {
+    max-width: 40rem;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}
+@media (min-width: 48rem) {
+  .container {
+    max-width: 54rem;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}
+@media (min-width: 62rem) {
+  .container {
+    max-width: 68rem;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}
+@media (min-width: 75rem) {
+  .container {
+    max-width: 76rem;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 36rem) {
+  .hide-in-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 35.9375rem) {
+  .hide-in-mobile {
+    display: none;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.show-slow {
+  -webkit-animation: show-slow-ani 0.4s ease-in-out forwards;
+          animation: show-slow-ani 0.4s ease-in-out forwards;
+}
+
+.hide-slow {
+  -webkit-animation: hide-slow-ani 0.4s ease-in-out forwards;
+          animation: hide-slow-ani 0.4s ease-in-out forwards;
+}
+
+@-webkit-keyframes show-slow-ani {
+  from {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes show-slow-ani {
+  from {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes hide-slow-ani {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes hide-slow-ani {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=App.css.map */
