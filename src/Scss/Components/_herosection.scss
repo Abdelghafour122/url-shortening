@@ -1,0 +1,35 @@
+.hero {
+  overflow: hidden;
+  padding: 30px 0;
+  & .container {
+    & .text {
+      & h1 {
+      }
+      & p {
+      }
+    }
+    & .image {
+      @include breakpoint-up(large) {
+        height: 489px;
+        width: 723px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url(../Images/illustration-working.svg);
+          top: 0;
+          left: 0;
+          height: 480px;
+          width: 723px;
+        }
+      }
+      & img {
+        // position: absolute;
+        // left: 18%;
+        // top: 0%;
+        // height: 489px;
+        // width: 723px;
+      }
+    }
+  }
+}

@@ -346,4 +346,25 @@ nav .container .ham-menu {
 .mobile-menu hr {
   width: 100%;
   background-color: hsl(0deg, 0%, 75%);
+}
+
+.hero {
+  overflow: hidden;
+  padding: 30px 0;
+}
+@media (min-width: 62rem) {
+  .hero .container .image {
+    height: 489px;
+    width: 723px;
+    position: relative;
+  }
+  .hero .container .image::before {
+    content: "";
+    position: absolute;
+    background-image: url(../Images/illustration-working.svg);
+    top: 0;
+    left: 0;
+    height: 480px;
+    width: 723px;
+  }
 }/*# sourceMappingURL=App.css.map */
