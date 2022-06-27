@@ -225,6 +225,11 @@ ul {
   color: hsl(260deg, 8%, 14%);
 }
 
+.err {
+  color: hsl(0deg, 87%, 67%);
+  font-style: italic;
+}
+
 .show-slow {
   -webkit-animation: show-slow-ani 0.4s ease-in-out forwards;
           animation: show-slow-ani 0.4s ease-in-out forwards;
