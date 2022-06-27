@@ -2,25 +2,103 @@
   overflow: hidden;
   padding: 30px 0;
   & .container {
+    flex-direction: column;
+    @include breakpoint-up(small) {
+      flex-direction: row;
+    }
     & .text {
+      margin-top: 30px;
+      gap: 20px;
+      align-items: center;
+      @include breakpoint-up(small) {
+        gap: 10px;
+        align-items: flex-start;
+      }
+      @include breakpoint-up(large) {
+        flex-basis: 60%;
+      }
       & h1 {
+        text-align: center;
+        font-size: 36px;
+        margin: 0;
+        color: $vd-blue;
+        line-height: 40px;
+        @include breakpoint-up(small) {
+          text-align: unset;
+          font-size: 37px;
+          margin-top: unset;
+        }
+        @include breakpoint-up(medium) {
+          font-size: 45px;
+        }
+        @include breakpoint-up(large) {
+          font-size: 70px;
+          line-height: 82px;
+        }
       }
       & p {
+        margin: 0;
+        color: $g-violet;
+        text-align: center;
+        margin-bottom: 10px;
+        @include breakpoint-up(small) {
+          text-align: unset;
+          margin-bottom: 20px;
+        }
+        @include breakpoint-up(large) {
+          font-size: 19px;
+          margin-bottom: 26px;
+        }
       }
     }
     & .image {
+      height: 250px;
+      width: 100%;
+      order: -1;
+      position: relative;
+      @include breakpoint-up(small) {
+        order: unset;
+      }
       @include breakpoint-up(large) {
         height: 489px;
         width: 723px;
-        position: relative;
-        &::before {
-          content: "";
-          position: absolute;
-          background-image: url(../Images/illustration-working.svg);
-          top: 0;
-          left: 0;
-          height: 480px;
-          width: 723px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../Images/illustration-working.svg);
+        top: -11%;
+        left: -2%;
+        height: 127%;
+        width: 109%;
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position: -35% 5%;
+        z-index: -2;
+        background-repeat: no-repeat;
+        @include breakpoint-up(small) {
+          top: 0%;
+          left: 6%;
+          height: 120%;
+          width: 120%;
+          background-size: 137%;
+          background-position: -1% 5%;
+        }
+        @include breakpoint-up(medium) {
+          top: -13%;
+          left: 6%;
+          height: 145%;
+          width: 120%;
+          background-size: 91%;
+          background-position: 103% 5%;
+        }
+        @include breakpoint-up(large) {
+          top: 0%;
+          left: 20%;
+          height: 100%;
+          width: 120%;
+          background-size: 97%;
+          background-position: 106% 30%;
         }
       }
       & img {

@@ -1,5 +1,4 @@
 import React from "react";
-import heroImage from "../../Images/illustration-working.svg";
 
 const HeroSection = () => {
   return (
@@ -13,9 +12,7 @@ const HeroSection = () => {
           </p>
           <button className="rounded big">Get Started</button>
         </section>
-        <div className="image">
-          {/* <img src={heroImage} alt="illustration-working" /> */}
-        </div>
+        <div className="image"></div>
       </div>
     </div>
   );
