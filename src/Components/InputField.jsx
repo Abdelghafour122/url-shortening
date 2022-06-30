@@ -1,42 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { getShortLink } from "../requests";
+import React, { useMemo } from "react";
 
-const LINK_REGEX =
-  /[(http(s)?)://(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)$/;
-const PUBLIC_URL = "https://api.shrtco.de/v2/shorten";
-
-const InputField = () => {
-  const [link, setLink] = useState("");
-  const [validLink, setValidLink] = useState(true);
-  const [linkInfo, setLinkInfo] = useState({});
-  const [resLink, setResLink] = useState("");
-
-  const handleClick = async () => {
-    setValidLink(LINK_REGEX.test(link));
-    if (!LINK_REGEX.test(link)) return;
-    shortenLink();
-  };
-
-  const shortenLink = async () => {
-    // const shortLink = await fetch(`${PUBLIC_URL}?url=${link}`, {
-    //   method: "GET",
-    // })
-    //   .then((data) => data.json())
-    //   .then((res) =>
-    //     //  setLinkInfo(res)
-    //     console.log(res)
-    //   );
-
-    // const info = await getShortLink(link)
-    setLinkInfo(await getShortLink(link));
-  };
-
-  useEffect(() => {
-    console.log(linkInfo);
-    linkInfo.data && setResLink(linkInfo.data.result);
-    console.log(resLink);
-  }, [linkInfo, resLink]);
-
+const InputField = ({ link, setLink, handleClick, validLink }) => {
   return (
     <div className="input-holder">
       <input
@@ -50,7 +14,11 @@ const InputField = () => {
       <button className="squared big" onClick={handleClick}>
         Shorten It!
       </button>
-      {!validLink && <p className="err">Please add a link</p>}
+      {!validLink ? (
+        <p className="err">Please add a link</p>
+      ) : (
+        !validLink && link === "" && <p className="err">Can't be empty</p>
+      )}
     </div>
   );
 };

@@ -6,9 +6,8 @@ export const getShortLink = async (link) => {
     .get(`${PUBLIC_URL}?url=${link}`, {
       headers: { accept: "Application/json" },
     })
-    // .then((data) => data.json())
-    // .then((res) => res)
-    .catch((error) => console.error(error));
+    .then((res) => res.data.result.full_short_link)
+    .catch((error) => console.log(error));
 
   return result;
 };
