@@ -486,4 +486,8 @@ nav .container .ham-menu {
     background-size: 97%;
     background-position: 106% 30%;
   }
+}
+
+.stats .container .links-list .shortened {
+  gap: 30px;
 }/*# sourceMappingURL=App.css.map */

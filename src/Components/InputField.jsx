@@ -14,11 +14,7 @@ const InputField = ({ link, setLink, handleClick, validLink }) => {
       <button className="squared big" onClick={handleClick}>
         Shorten It!
       </button>
-      {!validLink ? (
-        <p className="err">Please add a link</p>
-      ) : (
-        !validLink && link === "" && <p className="err">Can't be empty</p>
-      )}
+      {!validLink && <p className="err">Please add a link</p>}
     </div>
   );
 };

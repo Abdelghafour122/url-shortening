@@ -1,0 +1,27 @@
+.stats {
+  & .container {
+    & .input-holder {
+      & input {
+      }
+      & .err {
+      }
+    }
+    & .links-list {
+      & .shortened {
+        gap: 30px;
+      }
+    }
+    & .text {
+    }
+    & .articles {
+      & .stat {
+        & img {
+        }
+        & h4 {
+        }
+        & p {
+        }
+      }
+    }
+  }
+}

@@ -22,6 +22,7 @@ const StatsSection = () => {
     if (!validLink) return;
     const result = await getShortLink(link);
     addShortLink({ link, result });
+    setLink("");
   };
 
   const addShortLink = (newShortLinkData) => {
