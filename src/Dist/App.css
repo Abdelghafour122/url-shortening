@@ -531,7 +531,7 @@ nav .container .ham-menu {
 }
 @media (min-width: 62rem) {
   .stats .container .input-holder {
-    padding: 30px;
+    padding: 40px;
     gap: 20px;
   }
 }
@@ -646,6 +646,13 @@ nav .container .ham-menu {
   gap: 90px;
   margin: 50px 0 90px;
 }
+@media (min-width: 62rem) {
+  .stats .container .articles {
+    flex-direction: row;
+    gap: 30px;
+    margin: 90px 0 130px;
+  }
+}
 .stats .container .articles .stat {
   background-color: hsl(0deg, 0%, 100%);
   position: relative;
@@ -653,6 +660,20 @@ nav .container .ham-menu {
   padding: 20px;
   text-align: center;
   border-radius: 7px;
+}
+@media (min-width: 62rem) {
+  .stats .container .articles .stat {
+    align-items: flex-start;
+    padding: 30px 20px;
+    width: 320px;
+  }
+  .stats .container .articles .stat:nth-of-type(1) {
+    margin-top: -70px;
+    z-index: 99;
+  }
+  .stats .container .articles .stat:nth-of-type(3) {
+    margin-bottom: -70px;
+  }
 }
 .stats .container .articles .stat:nth-of-type(2)::before {
   content: "";
@@ -664,15 +685,33 @@ nav .container .ham-menu {
   transform: translateX(-50%);
   background-color: hsl(180deg, 66%, 49%);
 }
+@media (min-width: 62rem) {
+  .stats .container .articles .stat:nth-of-type(2)::before {
+    width: 90px;
+    height: 10px;
+    left: -90px;
+    top: 42%;
+    transform: translateY(-50%);
+  }
+}
 .stats .container .articles .stat:nth-of-type(2)::after {
   content: "";
   position: absolute;
   height: 90px;
   width: 10px;
-  bottom: -90px;
   left: 50%;
+  bottom: -90px;
   transform: translateX(-50%);
   background-color: hsl(180deg, 66%, 49%);
+}
+@media (min-width: 62rem) {
+  .stats .container .articles .stat:nth-of-type(2)::after {
+    width: 90px;
+    height: 10px;
+    left: 100%;
+    top: 42%;
+    transform: translateY(-50%);
+  }
 }
 .stats .container .articles .stat .image {
   position: absolute;
@@ -682,6 +721,12 @@ nav .container .ham-menu {
   padding: 16px;
   border-radius: 50%;
   background-color: hsl(258deg, 27%, 26%);
+}
+@media (min-width: 62rem) {
+  .stats .container .articles .stat .image {
+    left: 20px;
+    transform: unset;
+  }
 }
 .stats .container .articles .stat h4 {
   margin: 40px 0 0;
@@ -694,4 +739,9 @@ nav .container .ham-menu {
   font-size: 15px;
   line-height: 1.7;
   margin-top: 15px;
+}
+@media (min-width: 62rem) {
+  .stats .container .articles .stat p {
+    text-align: left;
+  }
 }/*# sourceMappingURL=App.css.map */
