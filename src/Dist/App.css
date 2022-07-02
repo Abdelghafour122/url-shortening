@@ -185,6 +185,9 @@ ul {
   font-size: 16px;
   padding: 10px 33px;
 }
+.squared:hover {
+  background-color: hsl(180deg, 55%, 75%);
+}
 .squared.copied {
   background-color: hsl(258deg, 27%, 26%);
   cursor: unset;
@@ -228,6 +231,10 @@ ul {
 .err {
   color: hsl(0deg, 87%, 67%);
   font-style: italic;
+}
+
+.err-input {
+  border: 2px solid hsl(0deg, 87%, 67%);
 }
 
 .show-slow {
@@ -488,6 +495,75 @@ nav .container .ham-menu {
   }
 }
 
+.stats {
+  background-color: #eff1f7;
+}
+.stats .container .input-holder {
+  background-color: hsl(258deg, 27%, 26%);
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+  background-image: url(../Images/bg-shorten-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  margin-bottom: 20px;
+}
+.stats .container .input-holder .input input {
+  padding: 10px 5px;
+  border-radius: 5px;
+  outline: none;
+}
+.stats .container .input-holder .input input::-moz-placeholder {
+  color: hsl(255deg, 11%, 22%);
+  font-size: 16px;
+}
+.stats .container .input-holder .input input:-ms-input-placeholder {
+  color: hsl(255deg, 11%, 22%);
+  font-size: 16px;
+}
+.stats .container .input-holder .input input::placeholder {
+  color: hsl(255deg, 11%, 22%);
+  font-size: 16px;
+}
+.stats .container .input-holder .input .err {
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+.stats .container .input-holder button {
+  width: 100%;
+}
+.stats .container .links-list {
+  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+}
 .stats .container .links-list .shortened {
-  gap: 30px;
+  flex-direction: column;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  border-radius: 10px;
+}
+.stats .container .links-list .shortened p {
+  padding: 13px;
+  border-bottom: 1px solid hsl(0deg, 0%, 75%);
+  color: hsl(260deg, 8%, 14%);
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.stats .container .links-list .shortened .right {
+  width: 100%;
+  padding: 13px;
+}
+.stats .container .links-list .shortened .right a {
+  color: hsl(180deg, 66%, 49%);
+  text-decoration: none;
+}
+.stats .container .links-list .shortened .right button {
+  margin-top: 13px;
+  display: inline-block;
+  width: 100%;
 }/*# sourceMappingURL=App.css.map */

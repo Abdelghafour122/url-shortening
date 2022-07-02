@@ -165,6 +165,9 @@ ul {
     font-size: 16px;
     padding: 10px 33px;
   }
+  &:hover {
+    background-color: hsl(180, 55%, 75%);
+  }
   &.copied {
     background-color: $dark-violet;
     cursor: unset;
@@ -203,4 +206,8 @@ ul {
 .err {
   color: $red;
   font-style: italic;
+}
+
+.err-input {
+  border: 2px solid $red;
 }

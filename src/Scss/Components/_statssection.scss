@@ -1,14 +1,68 @@
 .stats {
+  background-color: #eff1f7;
   & .container {
     & .input-holder {
-      & input {
+      background-color: $dark-violet;
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+      border-radius: 10px;
+      background-image: url(../Images/bg-shorten-mobile.svg);
+      background-repeat: no-repeat;
+      background-position: 100% 0%;
+      margin-bottom: 20px;
+      .input {
+        & input {
+          padding: 10px 5px;
+          border-radius: 5px;
+          outline: none;
+          &::placeholder {
+            color: $vd-blue;
+            font-size: 16px;
+          }
+        }
+        & .err {
+          font-size: 14px;
+          margin: 10px 0 0;
+        }
       }
-      & .err {
+      & button {
+        width: 100%;
       }
     }
     & .links-list {
+      gap: 20px;
+      flex-direction: column;
+      width: 100%;
       & .shortened {
-        gap: 30px;
+        // gap: 30px;
+        flex-direction: column;
+        background-color: $white;
+        width: 100%;
+        border-radius: 10px;
+        & p {
+          padding: 13px;
+          border-bottom: 1px solid $grey;
+          color: $vd-violet;
+          margin: 0;
+          width: 100%;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        & .right {
+          width: 100%;
+          padding: 13px;
+          & a {
+            color: $cyan;
+            text-decoration: none;
+          }
+          & button {
+            margin-top: 13px;
+            display: inline-block;
+            width: 100%;
+          }
+        }
       }
     }
     & .text {
