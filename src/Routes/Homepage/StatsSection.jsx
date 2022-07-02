@@ -43,7 +43,7 @@ const StatsSection = () => {
           setLink={setLink}
         />
         <LinksList linksList={linksList} />
-        <section className="text">
+        <section className="text df ai-c jc-c fd-c">
           <h2>Advanced Statistics</h2>
           <p>
             Track how your links are performing across the web with our advanced

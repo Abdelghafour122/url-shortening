@@ -1,6 +1,7 @@
 .stats {
   background-color: #eff1f7;
   & .container {
+    gap: 40px;
     & .input-holder {
       background-color: $dark-violet;
       flex-direction: column;
@@ -66,14 +67,74 @@
       }
     }
     & .text {
+      gap: 20px;
+      text-align: center;
+      & h2 {
+        margin: 0;
+        color: $vd-blue;
+        font-size: 26px;
+      }
+      & p {
+        margin: 0;
+        color: $g-violet;
+      }
     }
     & .articles {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 90px;
+      margin: 50px 0 90px;
       & .stat {
-        & img {
+        background-color: $white;
+        position: relative;
+        background-color: $white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 7px;
+        &:nth-of-type(2) {
+          &::before {
+            content: "";
+            position: absolute;
+            height: 90px;
+            width: 10px;
+            top: -90px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: hsl(180deg, 66%, 49%);
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            height: 90px;
+            width: 10px;
+            bottom: -90px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: hsl(180deg, 66%, 49%);
+          }
+        }
+        & .image {
+          position: absolute;
+          top: -38px;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 16px;
+          border-radius: 50%;
+          background-color: $dark-violet;
         }
         & h4 {
+          margin: 40px 0 0;
+          font-size: 21px;
+          color: $vd-blue;
         }
         & p {
+          margin: 0;
+          color: $g-violet;
+          font-size: 15px;
+          line-height: 1.7;
+          margin-top: 15px;
         }
       }
     }

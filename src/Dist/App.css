@@ -498,6 +498,9 @@ nav .container .ham-menu {
 .stats {
   background-color: #eff1f7;
 }
+.stats .container {
+  gap: 40px;
+}
 .stats .container .input-holder {
   background-color: hsl(258deg, 27%, 26%);
   flex-direction: column;
@@ -566,4 +569,74 @@ nav .container .ham-menu {
   margin-top: 13px;
   display: inline-block;
   width: 100%;
+}
+.stats .container .text {
+  gap: 20px;
+  text-align: center;
+}
+.stats .container .text h2 {
+  margin: 0;
+  color: hsl(255deg, 11%, 22%);
+  font-size: 26px;
+}
+.stats .container .text p {
+  margin: 0;
+  color: hsl(258deg, 7%, 63%);
+}
+.stats .container .articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  margin: 50px 0 90px;
+}
+.stats .container .articles .stat {
+  background-color: hsl(0deg, 0%, 100%);
+  position: relative;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 20px;
+  text-align: center;
+  border-radius: 7px;
+}
+.stats .container .articles .stat:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  height: 90px;
+  width: 10px;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsl(180deg, 66%, 49%);
+}
+.stats .container .articles .stat:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  height: 90px;
+  width: 10px;
+  bottom: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsl(180deg, 66%, 49%);
+}
+.stats .container .articles .stat .image {
+  position: absolute;
+  top: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px;
+  border-radius: 50%;
+  background-color: hsl(258deg, 27%, 26%);
+}
+.stats .container .articles .stat h4 {
+  margin: 40px 0 0;
+  font-size: 21px;
+  color: hsl(255deg, 11%, 22%);
+}
+.stats .container .articles .stat p {
+  margin: 0;
+  color: hsl(258deg, 7%, 63%);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-top: 15px;
 }/*# sourceMappingURL=App.css.map */
