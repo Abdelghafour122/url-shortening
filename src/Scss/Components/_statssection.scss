@@ -1,5 +1,9 @@
 .stats {
   background-color: #eff1f7;
+  margin-top: 100px;
+  @include breakpoint-up(large) {
+    margin-top: 130px;
+  }
   & .container {
     gap: 40px;
     & .input-holder {
@@ -11,12 +15,34 @@
       background-image: url(../Images/bg-shorten-mobile.svg);
       background-repeat: no-repeat;
       background-position: 100% 0%;
-      margin-bottom: 20px;
+      margin: -65px 0 20px;
+      @include breakpoint-up(medium) {
+        margin: -50px 0 20px;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        background-image: url(../Images/bg-shorten-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      @include breakpoint-up(large) {
+        padding: 30px;
+        gap: 20px;
+      }
       .input {
+        @include breakpoint-up(large) {
+          // width: 100%;
+          flex: 1;
+        }
         & input {
           padding: 10px 5px;
           border-radius: 5px;
           outline: none;
+          @include breakpoint-up(large) {
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 16px;
+          }
           &::placeholder {
             color: $vd-blue;
             font-size: 16px;
@@ -25,10 +51,16 @@
         & .err {
           font-size: 14px;
           margin: 10px 0 0;
+          @include breakpoint-up(medium) {
+            margin: 5px 0 0;
+          }
         }
       }
       & button {
         width: 100%;
+        @include breakpoint-up(medium) {
+          width: unset;
+        }
       }
     }
     & .links-list {
@@ -36,7 +68,7 @@
       flex-direction: column;
       width: 100%;
       & .shortened {
-        // gap: 30px;
+        // gap: 30px; only in tab/desktop
         flex-direction: column;
         background-color: $white;
         width: 100%;
@@ -73,10 +105,16 @@
         margin: 0;
         color: $vd-blue;
         font-size: 26px;
+        @include breakpoint-up(medium) {
+          font-size: 30px;
+        }
       }
       & p {
         margin: 0;
         color: $g-violet;
+        @include breakpoint-up(medium) {
+          width: 70%;
+        }
       }
     }
     & .articles {

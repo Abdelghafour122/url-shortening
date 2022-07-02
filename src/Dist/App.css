@@ -497,6 +497,12 @@ nav .container .ham-menu {
 
 .stats {
   background-color: #eff1f7;
+  margin-top: 100px;
+}
+@media (min-width: 62rem) {
+  .stats {
+    margin-top: 130px;
+  }
 }
 .stats .container {
   gap: 40px;
@@ -510,12 +516,41 @@ nav .container .ham-menu {
   background-image: url(../Images/bg-shorten-mobile.svg);
   background-repeat: no-repeat;
   background-position: 100% 0%;
-  margin-bottom: 20px;
+  margin: -65px 0 20px;
+}
+@media (min-width: 48rem) {
+  .stats .container .input-holder {
+    margin: -50px 0 20px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-image: url(../Images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+@media (min-width: 62rem) {
+  .stats .container .input-holder {
+    padding: 30px;
+    gap: 20px;
+  }
+}
+@media (min-width: 62rem) {
+  .stats .container .input-holder .input {
+    flex: 1;
+  }
 }
 .stats .container .input-holder .input input {
   padding: 10px 5px;
   border-radius: 5px;
   outline: none;
+}
+@media (min-width: 62rem) {
+  .stats .container .input-holder .input input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
 }
 .stats .container .input-holder .input input::-moz-placeholder {
   color: hsl(255deg, 11%, 22%);
@@ -533,8 +568,18 @@ nav .container .ham-menu {
   font-size: 14px;
   margin: 10px 0 0;
 }
+@media (min-width: 48rem) {
+  .stats .container .input-holder .input .err {
+    margin: 5px 0 0;
+  }
+}
 .stats .container .input-holder button {
   width: 100%;
+}
+@media (min-width: 48rem) {
+  .stats .container .input-holder button {
+    width: unset;
+  }
 }
 .stats .container .links-list {
   gap: 20px;
@@ -579,9 +624,19 @@ nav .container .ham-menu {
   color: hsl(255deg, 11%, 22%);
   font-size: 26px;
 }
+@media (min-width: 48rem) {
+  .stats .container .text h2 {
+    font-size: 30px;
+  }
+}
 .stats .container .text p {
   margin: 0;
   color: hsl(258deg, 7%, 63%);
+}
+@media (min-width: 48rem) {
+  .stats .container .text p {
+    width: 70%;
+  }
 }
 .stats .container .articles {
   display: flex;
