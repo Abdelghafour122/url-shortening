@@ -2,12 +2,19 @@
   background-color: $dark-violet;
   background-image: url(../Images/bg-boost-mobile.svg);
   background-repeat: no-repeat;
-
+  background-size: 100% 100%;
+  padding: 75px 0;
+  @include breakpoint-up(small) {
+    background-image: url(../Images/bg-boost-desktop.svg);
+  }
   & .container {
+    gap: 20px;
     & h2 {
       color: $white;
-    }
-    & button {
+      margin: 0;
+      @include breakpoint-up(large) {
+        font-size: 32px;
+      }
     }
   }
 }

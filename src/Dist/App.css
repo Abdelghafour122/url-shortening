@@ -750,7 +750,23 @@ nav .container .ham-menu {
   background-color: hsl(258deg, 27%, 26%);
   background-image: url(../Images/bg-boost-mobile.svg);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 75px 0;
+}
+@media (min-width: 36rem) {
+  .boost {
+    background-image: url(../Images/bg-boost-desktop.svg);
+  }
+}
+.boost .container {
+  gap: 20px;
 }
 .boost .container h2 {
   color: hsl(0deg, 0%, 100%);
+  margin: 0;
+}
+@media (min-width: 62rem) {
+  .boost .container h2 {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=App.css.map */
