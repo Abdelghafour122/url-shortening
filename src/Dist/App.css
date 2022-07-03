@@ -744,4 +744,13 @@ nav .container .ham-menu {
   .stats .container .articles .stat p {
     text-align: left;
   }
+}
+
+.boost {
+  background-color: hsl(258deg, 27%, 26%);
+  background-image: url(../Images/bg-boost-mobile.svg);
+  background-repeat: no-repeat;
+}
+.boost .container h2 {
+  color: hsl(0deg, 0%, 100%);
 }/*# sourceMappingURL=App.css.map */

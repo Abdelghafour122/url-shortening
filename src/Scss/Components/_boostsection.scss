@@ -1,0 +1,13 @@
+.boost {
+  background-color: $dark-violet;
+  background-image: url(../Images/bg-boost-mobile.svg);
+  background-repeat: no-repeat;
+
+  & .container {
+    & h2 {
+      color: $white;
+    }
+    & button {
+    }
+  }
+}
