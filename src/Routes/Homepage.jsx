@@ -1,5 +1,6 @@
 import React from "react";
 import BoostSection from "./Homepage/BoostSection";
+import Footer from "./Homepage/Footer";
 import HeroSection from "./Homepage/HeroSection";
 import Navbar from "./Homepage/Navbar";
 import StatsSection from "./Homepage/StatsSection";
@@ -11,6 +12,7 @@ const Homepage = () => {
       <HeroSection />
       <StatsSection />
       <BoostSection />
+      <Footer />
     </React.Fragment>
   );
 };

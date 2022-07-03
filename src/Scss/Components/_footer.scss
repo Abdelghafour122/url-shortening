@@ -1,0 +1,93 @@
+footer {
+  background-color: $vd-violet;
+  padding: 50px 0;
+  & .container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    & .logo {
+    }
+    & .links {
+      flex-direction: column;
+      gap: 30px;
+      @include breakpoint-up(medium) {
+        flex-direction: row;
+      }
+      @include breakpoint-up(large) {
+        gap: 45px;
+      }
+
+      & .footer-links {
+        flex-direction: column;
+        align-items: center;
+        @include breakpoint-up(medium) {
+          align-items: flex-start;
+        }
+        & p {
+          color: #fff;
+          margin-top: 0;
+          font-weight: 700;
+          text-align: center;
+          @include breakpoint-up(medium) {
+            margin-bottom: 25px;
+          }
+        }
+        & li {
+          &:not(:last-of-type) {
+            @include breakpoint-up(medium) {
+              margin-bottom: 10px;
+            }
+          }
+          & button {
+            color: $g-violet;
+            padding: 0;
+            background-color: unset;
+            border: none;
+            transition: 0.3s;
+            cursor: pointer;
+            @include breakpoint-up(medium) {
+              text-align: left;
+            }
+            &:hover {
+              color: $cyan;
+            }
+          }
+        }
+      }
+    }
+    & .socials {
+      & ul {
+        gap: 15px;
+        @include breakpoint-up(medium) {
+          gap: 25px;
+        }
+        @include breakpoint-up(medium) {
+          gap: 30px;
+        }
+        & li {
+          height: 24px;
+          width: 24px;
+          & button {
+            height: 24px;
+            width: 24px;
+            padding: 0;
+            & svg {
+              &:hover {
+                & path {
+                  transition: 0.3s;
+                  fill: $cyan;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

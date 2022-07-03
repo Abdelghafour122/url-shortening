@@ -769,4 +769,103 @@ nav .container .ham-menu {
   .boost .container h2 {
     font-size: 32px;
   }
+}
+
+footer {
+  background-color: hsl(260deg, 8%, 14%);
+  padding: 50px 0;
+}
+footer .container {
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 48rem) {
+  footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+footer .container .links {
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 48rem) {
+  footer .container .links {
+    flex-direction: row;
+  }
+}
+@media (min-width: 62rem) {
+  footer .container .links {
+    gap: 45px;
+  }
+}
+footer .container .links .footer-links {
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 48rem) {
+  footer .container .links .footer-links {
+    align-items: flex-start;
+  }
+}
+footer .container .links .footer-links p {
+  color: #fff;
+  margin-top: 0;
+  font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 48rem) {
+  footer .container .links .footer-links p {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 48rem) {
+  footer .container .links .footer-links li:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+footer .container .links .footer-links li button {
+  color: hsl(258deg, 7%, 63%);
+  padding: 0;
+  background-color: unset;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (min-width: 48rem) {
+  footer .container .links .footer-links li button {
+    text-align: left;
+  }
+}
+footer .container .links .footer-links li button:hover {
+  color: hsl(180deg, 66%, 49%);
+}
+footer .container .socials ul {
+  gap: 15px;
+}
+@media (min-width: 48rem) {
+  footer .container .socials ul {
+    gap: 25px;
+  }
+}
+@media (min-width: 48rem) {
+  footer .container .socials ul {
+    gap: 30px;
+  }
+}
+footer .container .socials ul li {
+  height: 24px;
+  width: 24px;
+}
+footer .container .socials ul li button {
+  height: 24px;
+  width: 24px;
+  padding: 0;
+}
+footer .container .socials ul li button svg:hover path {
+  transition: 0.3s;
+  fill: hsl(180deg, 66%, 49%);
 }/*# sourceMappingURL=App.css.map */
