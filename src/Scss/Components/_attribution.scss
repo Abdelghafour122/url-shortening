@@ -1,0 +1,9 @@
+.attribution {
+  text-align: center;
+  color: $grey;
+  background-color: $vd-violet;
+  text-transform: uppercase;
+  & a {
+    color: $red;
+  }
+}

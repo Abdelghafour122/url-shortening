@@ -17,7 +17,7 @@ const Attribution = () => {
         target="_blank"
         rel="noreferrer"
       >
-        Your Name Here
+        Abdelghafour122
       </a>
       .
     </div>

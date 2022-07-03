@@ -868,4 +868,14 @@ footer .container .socials ul li button {
 footer .container .socials ul li button svg:hover path {
   transition: 0.3s;
   fill: hsl(180deg, 66%, 49%);
+}
+
+.attribution {
+  text-align: center;
+  color: hsl(0deg, 0%, 75%);
+  background-color: hsl(260deg, 8%, 14%);
+  text-transform: uppercase;
+}
+.attribution a {
+  color: hsl(0deg, 87%, 67%);
 }/*# sourceMappingURL=App.css.map */
