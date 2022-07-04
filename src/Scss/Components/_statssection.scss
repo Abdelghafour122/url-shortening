@@ -24,6 +24,7 @@
         background-image: url(../Images/bg-shorten-desktop.svg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        margin-bottom: 0;
       }
       @include breakpoint-up(large) {
         padding: 40px;
@@ -31,7 +32,6 @@
       }
       .input {
         @include breakpoint-up(large) {
-          // width: 100%;
           flex: 1;
         }
         & input {
@@ -44,7 +44,7 @@
             font-size: 16px;
           }
           &::placeholder {
-            color: $vd-blue;
+            color: $g-violet;
             font-size: 16px;
           }
         }
@@ -68,11 +68,14 @@
       flex-direction: column;
       width: 100%;
       & .shortened {
-        // gap: 30px; only in tab/desktop
         flex-direction: column;
         background-color: $white;
         width: 100%;
         border-radius: 10px;
+        @include breakpoint-up(medium) {
+          flex-direction: row;
+          padding: 17px;
+        }
         & p {
           padding: 13px;
           border-bottom: 1px solid $grey;
@@ -82,10 +85,22 @@
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
+          @include breakpoint-up(medium) {
+            border-bottom: unset;
+            padding: unset;
+          }
         }
         & .right {
           width: 100%;
           padding: 13px;
+          @include breakpoint-up(medium) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-basis: 40%;
+            padding: unset;
+            gap: 20px;
+          }
           & a {
             color: $cyan;
             text-decoration: none;
@@ -94,6 +109,11 @@
             margin-top: 13px;
             display: inline-block;
             width: 100%;
+            @include breakpoint-up(medium) {
+              margin-top: 0;
+              display: inline;
+              width: unset;
+            }
           }
         }
       }
