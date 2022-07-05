@@ -31,7 +31,9 @@ const Footer = () => {
           {FOOTER_LINKS.map((sec, ind) => {
             return (
               <ul className="footer-links df" key={ind}>
-                <p>{sec.p}</p>
+                <li>
+                  <p>{sec.p}</p>
+                </li>
                 {sec.links.map((link, ind) => {
                   return (
                     <li key={ind}>
